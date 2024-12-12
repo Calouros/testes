@@ -1,0 +1,43 @@
+@FXML
+private Button btnMeusMatches;
+
+// Método para exibir a tela de Matches
+@FXML
+public void abrirTelaMatches() {
+    try {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/projetoptwo/matches-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Meus Matches");
+        stage.setScene(scene);
+        stage.show();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+
+
+
+
+<Button fx:id="btnMeusMatches" text="Meus Matches" onAction="#abrirTelaMatches" />
+
+
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.projetoptwo.controllers.HomeController">
+    <top>
+        <Label text="Bem-vindo ao Buskicine" />
+    </top>
+    <center>
+        <Button fx:id="btnMeusMatches" text="Meus Matches" onAction="#abrirTelaMatches" />
+    </center>
+</BorderPane>
+
+
+
+
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <ListView fx:id="listViewMatches" />
+    </children>
+</VBox>
