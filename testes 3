@@ -99,3 +99,63 @@ button, .interactive {
 body.dark-mode {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+<!-- Botão Match -->
+<Button fx:id="matchButton" text="Match" />
+
+<!-- Botão Próximo Filme -->
+<Button fx:id="nextMovieButton" text="Próximo Filme" />
+
+<!-- Botão Meus Matches -->
+<Button fx:id="myMatchesButton" text="Meus Matches" />
+
+
+/* Estilo para o botão Match */
+#matchButton {
+    background: linear-gradient(45deg, #FF6347, #FF4500);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#matchButton:hover {
+    background: linear-gradient(45deg, #FF4500, #FF6347);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 69, 0, 0.5);
+}
+
+/* Estilo para o botão Próximo Filme */
+#nextMovieButton {
+    background: linear-gradient(45deg, #1E90FF, #4169E1);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#nextMovieButton:hover {
+    background: linear-gradient(45deg, #4169E1, #1E90FF);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(30, 144, 255, 0.5);
+}
+
+/* Estilo para o botão Meus Matches */
+#myMatchesButton {
+    background: linear-gradient(45deg, #32CD32, #228B22);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#myMatchesButton:hover {
+    background: linear-gradient(45deg, #228B22, #32CD32);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(50, 205, 50, 0.5);
+}
+
+
